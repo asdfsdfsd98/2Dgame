@@ -1,2 +1,3 @@
 # 2D-Game
  game
+// We are still investigating, but from what we can tell so far, somebody published malware on NPM named after official Unity package names (like com.unity.mathematics). Since Unity doesn't use NPM, these names were available. And since, again, Unity doesn't use NPM, you won't pull in the "malware versions" into your project unless you try to install them via npm command line manually. Since Unity package manager uses the same .json format as NPM, it's getting flagged because it thinks the package will be installed from NPM (even though it won't as NPM isn't used by Unity). We will have more information available soon.
